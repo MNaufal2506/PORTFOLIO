@@ -21,7 +21,7 @@ body {
 }
 
 #hero-section {
-  background-color: red;
+  padding-bottom: 30px;
 }
 #hero-section .container-hero {
   background-color: purple;
@@ -29,5 +29,84 @@ body {
   text-align: center;
   font-size: 16px;
 }
+#hero-section .container-hero h1 {
+  margin: 20px 0;
+}
+#hero-section .container-hero button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  color: var(--text-button);
+  background-color: var(--secondary-color);
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+#hero-section .container-hero button:hover {
+  background-color: red;
+}
 
-/* Tablet - Dekstop (min-width: 360px) *//*# sourceMappingURL=style.css.map */
+#about .container-about .my-image-profile {
+  display: flex;
+  justify-content: center;
+}
+#about .container-about .my-image-profile .card-image {
+  width: 70%;
+}
+#about .container-about .my-image-profile .card-image img {
+  width: 100%;
+}
+#about .container-about .text-my-profile {
+  margin: 20px 0;
+}
+#about .container-about .text-my-profile h2 {
+  margin: 10px 0;
+  font-weight: bold;
+}
+#about .container-about .text-my-profile p {
+  font-family: "Rubik", sans-serif;
+  font-weight: lighter;
+  color: var(--text-secondary);
+  margin: 10px 0;
+}
+#about .container-about .text-my-profile button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  color: var(--text-button);
+  background-color: var(--secondary-color);
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+#about .container-about .text-my-profile button:hover {
+  background-color: red;
+}
+
+/* Tablet - Dekstop (min-width: 361px) */
+@media (min-width: 361px) {
+  #hero-section .container-hero {
+    font-size: 50px;
+    margin: 20px 10%;
+  }
+  #hero-section .container-hero button {
+    font-size: 24px;
+    padding: 20px 40px;
+    border-radius: 50px;
+  }
+  #about .container-about {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10%;
+  }
+  #about .container-about .my-image-profile {
+    background-color: red;
+    order: 1;
+    width: 50%;
+  }
+  #about .container-about .my-image-profile .card-image {
+    width: 80%;
+  }
+  #about .container-about .text-my-profile {
+    width: 50%;
+    background-color: violet;
+  }
+}/*# sourceMappingURL=style.css.map */

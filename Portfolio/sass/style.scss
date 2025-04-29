@@ -22,15 +22,121 @@ body {
 }
 
 #hero-section{
-  background-color: red;
+  padding-bottom: 30px;
+  // background-color: red;
 
   .container-hero{
     background-color: purple;
     margin: 0 20px;
     text-align: center;
     font-size: 16px;
+
+    h1{
+      margin: 20px 0;
+    }
+
+    button{
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      color: var(--text-button);
+      background-color: var(--secondary-color);
+      font-family: "Rubik", sans-serif;
+      font-weight: bold;
+
+      &:hover{
+        background-color: red;
+      }
+    }
   }
 }
 
-/* Tablet - Dekstop (min-width: 360px) */
-@media (min-width: 360px) {}
+#about{
+  .container-about{
+  
+
+    .my-image-profile{
+      display: flex;
+      justify-content: center;
+
+      .card-image{
+        width: 70%;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    .text-my-profile{
+      margin: 20px 0;
+
+      h2{
+        margin: 10px 0;
+        font-weight: bold;
+      }
+
+      p{
+        font-family: "Rubik", sans-serif;
+        font-weight: lighter;
+        color: var(--text-secondary);
+        margin: 10px 0;
+      }
+
+      button {
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+        color: var(--text-button);
+        background-color: var(--secondary-color);
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+  
+        &:hover{
+          background-color: red;
+        }
+      }
+
+    }
+
+  }
+}
+
+/* Tablet - Dekstop (min-width: 361px) */
+@media (min-width: 361px) {
+  #hero-section{
+    .container-hero{
+      font-size: 50px;
+      margin: 20px 10%;
+
+      button{
+        font-size: 24px;
+        padding: 20px 40px;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  #about{
+    .container-about{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 10%;
+
+      .my-image-profile{
+        background-color: red;
+        order: 1;
+        width: 50%;
+
+        .card-image{
+          width: 80%;
+        }
+      }
+
+      .text-my-profile{
+        width: 50%;
+        background-color: violet;
+      }
+    }
+  }
+}
